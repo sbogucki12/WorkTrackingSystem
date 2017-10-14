@@ -16,10 +16,10 @@ This code is simply for reference.  API addresses and connection strings have be
 
 ## Screenshots
 
+![Imgur](https://i.imgur.com/6cB8DyA.jpg)
 ![Imgur](https://i.imgur.com/4qAdkTG.jpg)
 ![Imgur](https://i.imgur.com/1LoOQox.jpg)
 ![Imgur](https://i.imgur.com/XxSLlgy.jpg)
-![Imgur](https://i.imgur.com/AKDef9x.jpg)
 ![Imgur](https://i.imgur.com/5ZP7PI5.jpg)
 
 ## Technologies
