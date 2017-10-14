@@ -1,0 +1,76 @@
+.test {
+	/* background-color: lightgrey; */
+	background: lightblue; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(lightblue, gray); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lightblue, gray); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lightblue, gray); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lightblue, gray); /* Standard syntax */
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+	padding: 30px;
+	border-radius: 25px;	
+}
+
+body {
+	background-color: rgb(137, 129, 129);
+}
+
+/* navbar styling */
+#nav {
+	width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+	list-style: none;
+	background-color: #f2f2f2;
+	border-bottom: 1px solid #ccc; 
+  border-top: 1px solid #ccc; }
+  
+#nav li {
+  float: left; }
+  
+#nav li a {
+	display: block;
+	padding: 8px 15px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #069;
+  border-right: 1px solid #ccc; }
+  
+#nav li a:hover {
+	color: #c00;
+  background-color: #fff; }
+  
+#logo {
+  float: right;
+  font-weight: bold;
+  margin-top: 5px;
+}
+/* 
+Animated Boxes */
+.box{
+  width: calc(20%);
+  margin: 10px 10px;
+  background:rgb(38, 39, 40, 0.446);
+  cursor: pointer;
+  color: rgb(38, 39, 40, 0.446);
+  text-align: center;
+	line-height: 80px;
+	float: right;
+}
+
+.blue{
+  background-color: rgb(38, 39, 40, 0.446);
+}
+
+.scale{
+  transform: scale(1, 1);
+  transition: transform 0.5s ease;
+}
+
+
+.box:hover .scale{
+  transform: scale(1.5, 1.5);
+}
+

@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="test">
+    <center>
+      <h1>{{ record.wtsNumber }} </center>
+    </h1>
+    <br>
+    <br>
+    <p>
+      <b>Assigned to: </b>
+      <input type="text" ng-model="record.assignedTo"></input>
+    </p>
+    <p>
+      <b>Correspondence Type: </b>
+      <input type="text" ng-model="record.correspondenceType"></input>
+    </p>
+    <p>
+      <b>Deadline: </b>
+      <input type="text" ng-model="record.deadline"></input>
+    </p>
+    <p>
+      <b>Subject: </b>
+      <input type="text" ng-model="record.subject"></input>
+    </p>
+    <p>
+      <b>Comments: </b>
+      <input type="text" ng-model="record.comments"></input>
+    </p>
+    <p>
+      <b>Is Complete? (Check if "Yes") </b>
+      <input type="radio" ng-model="record.isComplete"></input>
+    </p>
+    <br>
+    <br>
+    <center>
+      <button type="button" class="btn btn-primary" ng-click="submitUpdatedRecord()">Save Updated Record</button>
+  </div>
+</div>

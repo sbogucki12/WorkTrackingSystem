@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="test">
+    <center>
+      <p>
+        <b>Enter Your WTS Number:</b>
+      </p>
+      <p>
+        <input type="text" ng-model="userWTSNumber">
+      </p>
+      <br>
+      <button type="button" class="btn btn-primary" ng-click="showSearch1()">Search for Record</button>
+    </center>
+    <br>
+    <div ng-repeat="record in records | filter : userWTSNumber" ng-show="showSearch2">
+      <p>
+        <b>WTS Number:</b> {{ record.wtsNumber }} </p>
+      <p>
+        <b>Assigned To:</b> {{ record.assignedTo }} </p>
+      <p>
+        <b>Correspondence Type:</b> {{ record.correspondenceType}} </p>
+      <p>
+        <b>Subject:</b> {{ record.subject }} </p>
+      <p>
+        <b>Applicant:</b> {{ record.applicant }} </p>
+      <p>
+        <b>Comments:</b> {{ record.comments }} </p>
+      <p>
+        <b>Deadline:</b> {{ record.deadline }} </p>
+    </div>
+  </div>
+</div>

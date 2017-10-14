@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="test">
+    <center>
+    <h1>Enter the WTS Number of the Record You Wish to Update:</h1>
+    <input type="text" ng-model="userWTSNumber"></input><br>
+    <br>
+    <button type="button" class="btn btn-primary" ng-click="showSearch()">Click to Search</button>
+    </center>
+    <br>
+    <form name="userForm" novalidate>
+      <div ng-repeat="record in records | filter : userWTSNumber" ng-show="showSearch1">
+        <p>{{ record.wtsNumber }} <button type="button" class="btn btn-primary" ui-sref="updaterecord({id:record.id})">Update This Record</button></p>       
+  </div>
+</div>

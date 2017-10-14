@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="test">
+    <b>Select Correspondence Type:</b>
+    </span>
+    <select ng-options="hotdog.id as hotdog.name for hotdog in correspondenceTypes" ng-model="correspondenceId" ng-change="setCorrespondence()">
+    </select>
+    <br>
+    <br>
+    <br>
+    <p>
+      <b>Flowtime:</b> {{ correspondenceFlowtime }}</p>
+    <br>
+    <button type="button" class="btn btn-success" ng-click="getDeadline()">Get Deadline Date</button>
+    <b>{{ deadline }}</b>
+    <br>
+    <br>
+    <b>Select Branch:</b>
+    <select ng-options="branch.id as branch.nomenclature for branch in branches" ng-model="branchId" ng-change="setBranch()">
+    </select>
+    <br>
+    <br>
+    <b>Assign to:</b>
+    <select ng-options="employee.id as employee.name for employee in employees" ng-model="employeeId" ng-change="setEmployee()">
+    </select>
+    <br>
+    <br>
+    <br>
+    <form name="myForm">
+      <label>
+        Subject:
+        <input type="text" name="subject" ng-model="correspondenceTypes.subject">
+        <br>
+        <p>{{ correspondenceTypes.subject }}</p>
+      </label>
+      <br>
+      <form name="myForm">
+        <label>
+          Comments:
+          <input type="text" name="subject" ng-model="records.comments">
+          <br>
+          <p>{{ records.comments }}</p>
+        </label>
+        <br>
+        <form name="myForm">
+          <label>
+            Applicant:
+            <input type="text" name="subject" ng-model="hotdogApplicant">
+            <br>
+            <p>{{ hotdogApplicant }}</p>
+          </label>
+          <br>
+          <button type="button" class="btn btn-success" ng-click="generateWTSNumber()">Generate WTS Number</button>
+          <br>
+          <br>
+          <p>
+            <b>WTS Number:</b> {{ fullWTSNumber }}</p>
+          <br>
+          <center>
+            <button type="button" class="btn btn-primary" ng-click="saveRecord()">Save Record</button>
+            <button type="button" class="btn btn-primary" ng-click="reloadAdmin()">Enter Another Record</button>
+          </center>
+          <div ng-show="myValue" class="ng-hide">
+            <br>
+            <center>{{ recordSavedMessage }}</center>
+            <br>
+          </div>
+  </div>
+</div>
