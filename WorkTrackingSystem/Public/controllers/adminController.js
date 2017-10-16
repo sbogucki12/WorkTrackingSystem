@@ -104,7 +104,7 @@ angular
         Deadline: $scope.deadline,
         Branch: $scope.branch.name
       }
-      $http.post('http://REMOVED/api/Records/', $scope.record);
+      $http.post('http://localhost:35824/api/Records/', $scope.record);
       $scope.myValue = true;
     }
 

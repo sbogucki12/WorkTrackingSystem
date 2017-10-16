@@ -1,4 +1,4 @@
-![Imgur](https://i.imgur.com/6UtwWyX.png)
+![Logo](https://imgur.com/a/yqNKx)
 
 # Work Tracking System
 
@@ -16,11 +16,12 @@ This code is simply for reference.  API addresses and connection strings have be
 
 ## Screenshots
 
-![Imgur](https://i.imgur.com/6cB8DyA.jpg)
-![Imgur](https://i.imgur.com/4qAdkTG.jpg)
-![Imgur](https://i.imgur.com/1LoOQox.jpg)
-![Imgur](https://i.imgur.com/XxSLlgy.jpg)
-![Imgur](https://i.imgur.com/5ZP7PI5.jpg)
+![Screenshot](https://ibb.co/kPojGG)
+![Screenshot](https://ibb.co/gG7dbG)
+![Screenshot](https://ibb.co/cRALqb)
+![Screenshot](https://ibb.co/nrzDAb)
+![Screenshot](https://ibb.co/cKEfqb)
+
 
 ## Technologies
 

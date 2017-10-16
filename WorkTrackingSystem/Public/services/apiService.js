@@ -6,7 +6,7 @@ angular
     var _branches = [];
     this.getBranches = function (cb) {
       if (_branches.length == 0) {
-        $http.get("http://REMOVED/api/Branches/")
+        $http.get("http://localhost:35824/api/Branches/")
           .success(function (response) {
             _branches = response;
             cb(_branches);
@@ -24,7 +24,7 @@ angular
     var _correspondenceTypes = [];
     this.getCoorespondenceTypes = function (cb) {
       if (_correspondenceTypes.length == 0) {
-        $http.get("http://REMOVED/api/CorrespondenceTypes/")
+        $http.get("http://localhost:35824/api/CorrespondenceTypes/")
           .success(function (response) {
             _correspondenceTypes = response;
             cb(_correspondenceTypes);
@@ -42,7 +42,7 @@ angular
     var _employees = [];
     this.getEmployees = function (cb) {
       if (_employees.length == 0) {
-        $http.get("http://REMOVED/api/Employees/")
+        $http.get("http://localhost:35824/api/Employees/")
           .success(function (response) {
             _employees = response;
             cb(_employees);
@@ -60,7 +60,7 @@ angular
     var _records = [];
     this.getRecords = function (cb) {
       if (_records.length == 0) {
-        $http.get("http://REMOVED/api/Records/")
+        $http.get("http://localhost:35824/api/Records/")
           .success(function (response) {
             _records = response;
             cb(_records);
@@ -97,7 +97,7 @@ angular
         cb(record)
       }
       else {
-        $http.get("http://REMOVED/api/Records/" + id)
+        $http.get("http://localhost:35824/api/Records/" + id)
           .success(function (response) {
             console.log(response)
             cb(response);
@@ -110,7 +110,7 @@ angular
 
     // Using a PUT request to update a record in the database 
     this.updateRecord = function (record) {
-      return $http.put('http:/REMOVED/api/Records/' + record.id, record);
+      return $http.put('http://localhost:35824/api/Records/' + record.id, record);
     }
 
   })
