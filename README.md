@@ -4,15 +4,7 @@
 
 ## Background
 
-At my former office, we tracked all work assignments via an Access database that was woefully inefficient. We called it the Work Tracking System.  As my first project at web development bootcamp, I endeavored to build a better version of that application. 
-
-Bootcamp credit:  **The Redwood Code Academy**  [Redwood Code Academy](https://redwoodcodeacademy.com/) 
-
-## Note
-
-This version of the Work Tracking System is a primitive version with only enough usability to prove the concept viable. 
-
-This code is simply for reference.  API addresses and connection strings have been removed, so the code, if implemented, has little functionality.  
+This Work Tracking System is proof of concept to replace a deprecated tool that tracks office assignments, deadlines, and incoming and outgoing correspondence in my office via a Microsoft Access database.
 
 ## Screenshots
 
@@ -49,10 +41,11 @@ This code is simply for reference.  API addresses and connection strings have be
 ## Use Case
 
 Employees can be assigned tasks with deadlines and all staff can search for assigned tasks.
-Next update will include: 
-+ User Authentication
-+ Reports   
+
+## Directions
+
+Administrative employees enter records in the Work Tracking System.  Records are assigned to technical employees. Each record is identified with a unique "WTS Number" and is given a due date.  Employees can search for records assigned to them via WTS Number. 
 
 ## Credit
 
-All code, and everything associated with the code, created by Steve Bogucki. sbogucki AT mail DOT usf DOT edu. 
+All code, and everything associated with the code, created by Steve Bogucki. stevebogucki12 @ gmail Dot com. 
